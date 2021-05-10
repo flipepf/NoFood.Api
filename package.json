@@ -2,7 +2,7 @@
   "name": "nofood.api",
   "version": "1.0.0",
   "description": "Api criada em NodeJS para fim de prática e estudo da linguagem",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
     "mongoose": "^5.12.7"
   }
 }

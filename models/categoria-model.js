@@ -4,11 +4,10 @@ const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 
 const categoriaModel = new schema({
-    titulo: { trim: true, index: true, required: true, type: String },
+    titulo: { type: String, required: true, trim: true, index: true },
     descricao: { type: String },
-    //foto: { type: String, required: true },
-    foto: { type: String, required: false },
-    ativa: { type: Boolean, required: true, default: true },
+    foto: { type: String },
+    ativo: { type: Boolean, required: true, default: true },
     dataCriacao: { type: Date, default: Date.now }
 }, { versionKey: false });
 
